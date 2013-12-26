@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<webmail>
+  <!--全局属性-->
+  <global>
+
+    <!--邮件下载路径-->
+    <DownloadPath>C:\CTIL\webmail</DownloadPath>
+
+    <!--URL目录-->
+    <ServerUrl>http://localhost:86/webmail/</ServerUrl>
+    
+    <!--数据库连接串-->
+    <conn>Data source =crmeasy;User id=crm;password=crm;Unicode=True</conn>
+
+    <!--接收间隔时间(分钟  大于等于5 建议10)-->
+    <rInterval>6</rInterval>
+    <!--发送间隔时间(分钟  大于等于5 建议10)-->
+    <sInterval>6</sInterval>
+  </global>
+  <!--公司集合-->
+  <companys>
+    <company>
+      <emailaddress>services@juren.com</emailaddress>
+      <pop3address>pop.juren.com</pop3address>
+		<!--  pop.163.com -->
+      <pop3port>110</pop3port>
+      <smtpaddress>smtp.juren.com</smtpaddress>
+		<!-- smtp.163.com -->
+      <smtpport>25</smtpport>
+      <password>jr1234</password>
+    </company>
+    <!--<company>
+      <emailaddress>759448747@qq.com</emailaddress>
+      <pop3address>pop.qq.com</pop3address>
+      <pop3port>110</pop3port>
+      <smtpaddress>smtp.qq.com</smtpaddress>
+      <smtpport>25</smtpport>
+      <password></password>
+    </company>-->
+  </companys>
+
+  <FileServer>\\Localhost</FileServer>
+  <FileServerPath>\\Localhost\Share</FileServerPath>
+  <LocalServerPath>C:\PWI\Share\</LocalServerPath>
+  <FileServerUser>administrator</FileServerUser>
+  <FileServerPWD></FileServerPWD>
+  
+</webmail>
